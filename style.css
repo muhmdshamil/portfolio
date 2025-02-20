@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(250, 212, 172), rgb(255, 255, 255));
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: rgb(109,67,0);
+    text-shadow: 0 0 10px rgb(109,67,0);
+}
+
+.cancel{
+    height: 40px;
+}
+
+.hamburg, .cancel {
+    margin-top: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: black;
+    font-size: 2rem;
+}
+
+.nav-container .links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-container .links a {
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+    transform: 0.3s linear;
+}
+
+.nav-container .links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(109,67,0);
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+.nav-container .contact-btn {
+    background-color: rgb(106,67,0);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(106,67,0);
+    transition: 0.2s linear;
+}
+
+.nav-container .contact-btn a {
+    color: white;
+    transition: 0.3s linear;
+}
+
+.nav-container .contact-btn:hover, .nav-container .contact-btn:hover a {
+    background-color: rgb(109,67,0);
+    color: white;
+}
+
+.nav-container .links a:hover {
+    color: rgb(106,67,0);
+}
+
+.dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightness(40%) blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+    background-color: rgb(106,67,0);
+}
+
+section {
+    width: 100%;
+}
+
+.main-container {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-container .image {
+    z-index: -1;
+}
+
+.main-container .image img {
+    width: 500px;
+    border-radius: 25rem;
+    box-shadow: 0 0 30px rgb(106,67,0);
+    
+}
+
+.main-container .content {
+    color: black;
+    width: 40%;
+    min-height: 100px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content h1 span {
+    color: rgb(109,67,0);
+    text-shadow: 0 0 10px rgb(109,67,0);
+}
+
+.content .type-writer {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content .type-writer span {
+    color: rgb(109,67,0);
+    font-size: 30px;
+    text-shadow: 0 0 5px rgb(109,67,0);
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.type-writer span::before {
+    content: " Developer";
+    animation: words 15s infinite;
+}
+
+.type-writer span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    animation: cursor 0.6s linear infinite;
+}
+
+
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words {
+    0%, 23% {
+        content: " Web Developer";
+    }
+    24%, 46% {
+        content: " Frontend Developer";
+    }
+    47%, 69% {
+        content: " Backend Developer";
+    }
+    70%, 100% {
+        content: " Software Developer";
+    }
+}
+
+.content p {
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    margin: 10px 0;
+    font-family:'Franklin Gothic Medium',  Arial, sans-serif;
+}
+
+.social-links i {
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(109,67,0);
+    border-radius: 50%;
+    color: rgb(106,67,0);
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.social-links i:hover{
+    background-color: rgb(109,67,0);
+    color: white;
+}
+
+.content .btn button{
+    cursor: pointer;
+    width: 40%;
+    height: 4vh;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(106,67,0);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+
+/* Mobile-first approach for smaller screens */
+@media only screen and (max-width: 768px) {
+    .nav-container .links {
+        display: none;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hamburg {
+        display: block;
+    }
+
+    .hamburg.active + .nav-container .links {
+        display: flex;
+    }
+
+    .hamburg.active {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-container .image img {
+        width: 300px;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content .type-writer span {
+        font-size: 25px;
+    }
+
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile-first approach for 375px screens */
+@media only screen and (max-width: 667px) {
+    body {
+        font-size: 14px; /* Adjusting base font size for small screens */
+    }
+
+    nav {
+        height: 8vh; /* Make the nav bar smaller */
+    }
+
+    .nav-container .links {
+        display: none; /* Hide navigation links initially */
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 10px;
+    }
+
+    .hamburg {
+        display: block; /* Display hamburger icon */
+    }
+
+    .hamburg.active + .nav-container .links {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-container .image img {
+        width: 80%; /* Adjust image width for small screens */
+        max-width: 250px;
+    }
+
+    .main-container .content {
+        width: 90%; /* Adjust content width */
+    }
+
+    .nav-container .links a {
+        font-size: 1.2rem; /* Increase font size for better readability */
+        padding: 12px 0;
+    }
+
+    .content h1 {
+        font-size: 26px; /* Adjust heading size */
+    }
+
+    .content .type-writer span {
+        font-size: 18px;
+    }
+
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .content .btn button {
+        width: 60%; /* Adjust button width */
+        height: 5vh;
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .main-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main-container .content {
+        width: 40%;
+    }
+
+    .main-container .image img {
+        width: 500px;
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamil Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Shamil</span>
+            </div>
+            <div class="links">
+               <div class="link"> <a href="/">Home</a></div>
+               <div class="link"> <a href="#about" >About</a></div>
+               <div class="link"> <a href="#skills">Skills</a></div>
+               <div class="link"> <a href="#services">Services</a></div>
+               <div class="link"> <a href="#experience">Experiance</a></div>
+               <div class="link contact-btn"> <a href="#contact">Conatct Us</a></div>               
+            </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+           <div class="dropdown">
+               <div class="links">
+                 <a href="/">Home</a>
+                 <a href="#about">About</a> 
+                 <a href="#skills">Skills</a> 
+                 <a href="#experience">Experiance</a> 
+                 <a href="#services">Services</a>
+                  <a href="#contact">Contact Us</a>
+                  <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+               </div>
+         
+           </div> 
+    </nav>
+
+      <section id="about">
+           <div class="main-container">
+               <div class="image">
+                  <img src="me.jpeg" alt="" />
+               </div>
+                  <div class="content">
+                  <h1>Hey I'm <span>Shamil</span></h1>
+                  <div class="type-writer" style="margin-top: 10px;">
+                      <h3>I'm a<span></span></h3>
+                      <p>Motivated and results-driven BCA graduate seeking a challenging position as a Web Developer or Software
+                        Developer within a dynamic organization. Offering a strong foundation in frontend and backend
+                        development, software engineering, and problem-solving, with a proven ability to build scalable applications,
+                        optimize performance, and collaborate within cross-functional teams to deliver innovative solutions.</p>
+                      <div class="social-links">
+                           <a href="https://github.com/muhmdshamil"><i class="fa-brands fa-github"></i></a>
+                           <a href="https://www.linkedin.com/in/muhammed-shamil-p/"><i class="fa-brands fa-linkedin"></i></a>
+                           <a href="https://www.instagram.com/shmiiex/"> <i class="fa-brands fa-square-instagram"></i></a>
+                           <a href=""><i class="fa-brands fa-facebook"></i></a>
+                      </div>
+                      <a href="Resume.pdf" download="Resume.pdf">
+                        <div class="btn">
+                          <button>Download CV</button>
+                      </div>
+                      </a>
+                     
+                     
+                    
+               </div>
+           </div>
+           </div>
+      </section>
+
+      <section id="skills" class="py-16" style="background: linear-gradient(to right, rgb(250, 212, 172), rgb(255, 255, 255)); margin-top: 40px;">
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 style=" color: rgb(109,67,0); text-shadow: 0 0 10px rgb(109,67,0); font-size: 30px; font-weight: 600; text-align: center; margin-bottom: 30px;">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-orange-500 to-orange-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-brands fa-html5 text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">HTML</h3>
+            </div>
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-blue-500 to-blue-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-brands fa-css3-alt text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">CSS</h3>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-teal-500 to-teal-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-solid fa-wind text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">Tailwind CSS</h3>
+            </div>
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-yellow-500 to-yellow-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-brands fa-js text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">JavaScript</h3>
+            </div>
+
+             <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-purple-500 to-purple-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-brands fa-bootstrap text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">Bootstrap</h3>
+            </div>
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-blue-400 to-cyan-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-brands fa-react text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">React.js</h3>
+            </div>
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-green-500 to-green-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-brands fa-node text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">Node.js</h3>
+            </div>
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-gray-700 to-gray-500" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-solid fa-server text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">Express.js</h3>
+            </div>
+            
+           
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-green-700 to-green-400" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-solid fa-database text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">MongoDB</h3>
+            </div>
+            
+            <div class="p-6 rounded-lg shadow-md text-white bg-gradient-to-r from-blue-700 to-blue-400" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                <i class="fa-solid fa-database text-5xl"></i>
+                <h3 class="text-xl font-semibold mt-3">PostgreSQL</h3>
+            </div>
+            
+         
+            
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="py-16" style="background: linear-gradient(to right, #f8fafc, #e2e8f0); margin-top: 20px;">
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 style="color: rgb(109,67,0); text-shadow: 0 0 3px rgb(109,67,0); font-size: 30px; font-weight: 600; text-align: center; margin-bottom: 30px;">
+                My Services
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 20px rgb(109,67,0);">
+                    <i class="fa-solid fa-laptop-code text-5xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">Web Development</h3>
+                    <p class="text-gray-600 mt-2">Building modern and responsive websites using the latest technologies.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-paint-brush text-5xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">Frontend Development</h3>
+                    <p class="text-gray-600 mt-2">Crafting visually appealing, user-friendly, and responsive interfaces using modern frameworks like React.js, Tailwind CSS, and Bootstrap.</p>
+                </div>
+
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-database text-5xl text-green-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">Backend Development</h3>
+                    <p class="text-gray-600 mt-2">Developing efficient, scalable, and secure backend systems with Node.js and databases.</p>
+                </div>
+
+                
+              
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-layer-group text-5xl text-green-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">MERN Stack</h3>
+                    <p class="text-gray-600 mt-2">Building dynamic full-stack web applications using MongoDB, Express.js, React.js, and Node.js with efficient APIs and secure authentication.</p>
+                </div>
+    
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-mobile text-5xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">Responsive Design</h3>
+                    <p class="text-gray-600 mt-2">Ensuring a seamless experience across all devices with mobile-friendly designs.</p>
+                </div>
+    
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-cogs text-5xl text-orange-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">API Development</h3>
+                    <p class="text-gray-600 mt-2">Creating robust RESTful APIs for smooth data exchange and integrations.</p>
+                </div>
+    
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-code text-5xl text-red-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">Custom Software Solutions</h3>
+                    <p class="text-gray-600 mt-2">Providing tailor-made software solutions to meet your business needs.</p>
+                </div>
+    
+                <div class="p-6 rounded-lg shadow-md bg-white hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+                    <i class="fa-solid fa-search text-5xl text-indigo-600"></i>
+                    <h3 class="text-xl font-semibold mt-3">SEO Optimization</h3>
+                    <p class="text-gray-600 mt-2">Improving website visibility with SEO best practices and performance optimization.</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience" class="py-16" style="background: linear-gradient(to right, #f8fafc, #e2e8f0);">
+    <div class="max-w-6xl mx-auto px-5">
+        <h2 style="color: rgb(109,67,0); text-shadow: 0 0 3px rgb(109,67,0); font-size: 30px; font-weight: 600; text-align: center; margin-bottom: 30px;">
+            Experience
+        </h2>
+        <div class="flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg p-6 mt-6 hover:shadow-xl transition duration-300" style="box-shadow:  0 0 10px rgb(109,67,0);">
+            <div class="w-full md:w-1/4 flex justify-center">
+                <img src="origa.jpg" alt="Origa Network Logo" class="w-20 h-20">
+            </div>
+            <div class="w-full md:w-3/4 text-center md:text-left mt-4 md:mt-0">
+                <h3 class="text-xl font-semibold text-gray-800">Backend Developer</h3>
+                <a href="https://www.linkedin.com/company/origa-networks/" target="_blank" class="text-blue-600 hover:underline">@Origa Network</a>
+                <p class="text-gray-600 mt-2">Feb 2024 - Present (6 months ongoing)</p>
+                <p class="text-gray-700 mt-2">
+                    Working as a backend developer on a live project, specializing in Node.js, Express.js, and database management. Handling API development, authentication, and performance optimization.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-16" style="background-color: rgb(109,67,0);">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            
+            <!-- Left Side - Contact Details -->
+            <div class="text-gray space-y-6">
+                <h3 class="text-2xl font-semibold" >Let's Connect</h3>
+                <p style="font-size: 18px;">
+                    I'm available for freelance work and collaborations. Feel free to drop a message and let's discuss!
+                </p>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-2xl"></i>
+                        <a href="mailto:shamiilmuhmd@gmail.com" class="text-lg hover:underline">shamiilmuhmd@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-2xl"></i>
+                        <a href="tel:+91XXXXXXXXXX" class="text-lg hover:underline">+91 9072319137</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        <a href="https://www.linkedin.com/in/muhammed-shamil-p/" target="_blank" class="text-lg hover:underline">
+                            LinkedIn 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <div class=" bg-gray-900 p-6 rounded-lg shadow-md">
+                <form onsubmit="sendToWhatsApp(event)">
+                    <input type="text" id="name" placeholder="Your Name" class="w-full p-3 mb-3 border text-gray rounded-md focus:ring-2 focus:ring-orange-400 outline-none" required>
+                    <input type="text" id="message" placeholder="Your Message" class="w-full p-3 mb-3 border text-gray rounded-md focus:ring-2 focus:ring-orange-400 outline-none" required>
+                    <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-md text-lg font-semibold hover:bg-green-600 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center bg-gray-900 text-white text-lg">
+    Developed by <span class="font-semibold">Shamil</span>
+</footer>
+ 
+      <script src="script.js"></script>
+</body>
+</html>
+
+
