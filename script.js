@@ -18,7 +18,7 @@ function sendToWhatsApp(event) {
     let message = document.getElementById("message").value;
 
     // Your WhatsApp number (replace with actual number)
-    let phoneNumber = "91XXXXXXXXXX"; 
+    let phoneNumber = "919072319137"; 
 
     // Format message for WhatsApp
     let whatsappMessage = `Hello, I am ${name}.%0AEmail: ${email}%0A%0A${message}`;
