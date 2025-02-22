@@ -245,10 +245,10 @@
 
             <!-- Right Side - Contact Form -->
             <div class=" bg-gray-900 p-6 rounded-lg shadow-md">
-                <form onsubmit="sendToWhatsApp(event)">
+                <form>
                     <input type="text" id="name" placeholder="Your Name" class="w-full p-3 mb-3 border text-gray rounded-md focus:ring-2 focus:ring-orange-400 outline-none" required>
                     <input type="text" id="message" placeholder="Your Message" class="w-full p-3 mb-3 border text-gray rounded-md focus:ring-2 focus:ring-orange-400 outline-none" required>
-                    <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-md text-lg font-semibold hover:bg-green-600 transition">
+                    <button onclick="sendToWhatsApp(event)" type="submit" class="w-full bg-green-500 text-white py-2 rounded-md text-lg font-semibold hover:bg-green-600 transition">
                         <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
                     </button>
                 </form>
